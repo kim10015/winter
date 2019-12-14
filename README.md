@@ -114,3 +114,4 @@ ggplot(xx,aes(1:35,xx))+
 ```
 ### cbind를 이용해 합친 후 apply함수를 이용해 각 시간별로 평균 평점을 구합니다.
 ### ggplot을 이용해서 시간별 추이를 봅니다.
+![1](https://user-images.githubusercontent.com/57972968/70847919-8ce1b880-1ead-11ea-8b48-bdb34e25fcbc.PNG)
