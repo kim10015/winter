@@ -113,5 +113,13 @@ ggplot(xx,aes(1:35,xx))+
   geom_line()
 ```
 ### cbind를 이용해 합친 후 apply함수를 이용해 각 시간별로 평균 평점을 구합니다.
-### ggplot을 이용해서 시간별 추이를 봅니다.
+### ggplot을 이용해서 35번 수집한 시간별 추이를 봅니다.
 ![1](https://user-images.githubusercontent.com/57972968/70847919-8ce1b880-1ead-11ea-8b48-bdb34e25fcbc.PNG)
+### 전체 평균은 8.7정도이며 최대 10 최소 6.4로 나왔습니다
+
+```xy<-as.matrix(x)
+table(xy)
+plot(table(xy))
+```
+### 이제 점수 빈도표를 만들어서 어느 점수가 많은지 확인해봅니다.
+![2](https://user-images.githubusercontent.com/57972968/70847945-09749700-1eae-11ea-9416-25e64577c2fb.PNG)
