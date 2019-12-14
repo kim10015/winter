@@ -123,3 +123,36 @@ plot(table(xy))
 ```
 ### 이제 점수 빈도표를 만들어서 어느 점수가 많은지 확인해봅니다.
 ![2](https://user-images.githubusercontent.com/57972968/70847945-09749700-1eae-11ea-9416-25e64577c2fb.PNG)
+### 10점이 제일 많은 빈도며 다음으로 9점대신 8점이 높은 점수 빈도를 보였습니다.
+```y<-cbind(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,y13,y14,y15,y16,y17,y18,y19,y20,y21,y22,y23,y24,y25,y26,y27,y28,y29,y30,y31,y32,y33,y34,y35)
+y
+example<-as.matrix(y)
+sum(str_count(example,'재밌'))
+sum(str_count(example,'재미'))
+sum(str_count(example,'감동'))
+sum(str_count(example,'최고'))
+sum(str_count(example,'스토리'))
+sum(str_count(example,'1편'))
+sum(str_count(example,'노래'))
+sum(str_count(example,'엘사'))
+sum(str_count(example,'안나'))
+sum(str_count(example,'올라프'))
+sum(str_count(example,'전작'))
+sum(str_count(example,'아이'))
+sum(str_count(example,'렛잇고'))
+sum(str_count(example,'여운'))
+sum(str_count(example,'겨울왕국'))
+sum(str_count(example,'노잼'))
+sum(str_count(example,'좋아요'))
+sum(str_count(example,'지루'))
+sum(str_count(example,'명작'))
+word<-c("재밌","재미","감동","최고","스토리","노래","엘사","안나","올라프","전작","아이","1편","렛잇고","여운","겨울왕국","노잼","좋아요","지루","명작")
+fre<-c(57,28,27,18,59,62,40,51,15,16,11,25,6,11,38,2,3,8,3)
+wordcloud(word,fre)
+```
+### 이제 많이 언급된 문자열을 찾기위해 stringr 패키지의 str_count를 이용하여 몇번 나왔는지 확인합니다.
+### 구한 값들을 word와 fre에 행렬로 값을 넣습니다.
+### wordcloud패키지의 wordcloud 함수를 이용해서 텍스트 시각화를 합니다
+### ~~이 부분은 텍스트마이닝 때 더욱 자세하게 배우면 좋을 것 같습니다~~
+![3](https://user-images.githubusercontent.com/57972968/70847949-15605900-1eae-11ea-8b5d-3b07bca87085.PNG)
+### 나온 텍스트 시각화입니다.
