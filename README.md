@@ -1,5 +1,5 @@
 # winter
-###네이버 최근 평점과 리뷰 내용을 크롤링하고 분석했습니다.
+### 네이버 최근 평점과 리뷰 내용을 크롤링하고 분석했습니다.
 ```library(rvest)
 library(RSelenium)
 library(stringr)
