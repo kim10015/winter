@@ -78,30 +78,11 @@ remDr$close()
 ### 하나는 점수, 하나는 텍스트로 저장을 합니다.
 ### 이제 제어한 창을 닫습니다.
 
-```x1<-read.csv("D:\\winter\\2019-12-11-11-38\\score.csv")
-x1$X<-NULL
-x2<-read.csv("D:\\winter\\2019-12-11-13-11\\score.csv")
-x2$X<-NULL
-x3<-read.csv("D:\\winter\\2019-12-11-14-46\\score.csv")
-x3$X<-NULL
-.
-.
-x34<-read.csv("D:\\winter\\2019-12-14-0-41\\score.csv")
-x34$X<-NULL
-x35<-read.csv("D:\\winter\\2019-12-14-1-1\\score.csv")
-x35$X<-NULL
-y1<-read.csv("D:\\winter\\2019-12-11-11-38\\textreview.csv")
-y1$X<-NULL
-y2<-read.csv("D:\\winter\\2019-12-11-13-11\\textreview.csv")
-y2$X<-NULL
-.
-.
-.
-y34<-read.csv("D:\\winter\\2019-12-14-0-41\\textreview.csv")
-y34$X<-NULL
-y35<-read.csv("D:\\winter\\2019-12-14-1-1\\textreview.csv")
-y35$X<-NULL
-```
+
+filenames<-list.files(full.names = TRUE)
+All<-lapply(filenames,function(i){
+  read.csv(i,header=TRUE,skip=4)
+})
 ### 시간별로 저장한 파일을 불러옵니다.
 ### 첫 칼럼은 삭제해줍니다.
 
